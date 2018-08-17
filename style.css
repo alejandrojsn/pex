@@ -12,6 +12,10 @@ button:focus {
   outline:0;
 }
 
+h2, h3, h4, h5, h6{
+  margin:0;
+}
+
 .container {
   width:90%;
   margin: auto;
@@ -40,10 +44,16 @@ button:focus {
   font-size:14px;
   font-weight: bold;
   padding:16px 40px;
-  transition: background-color .5s;
+  transition: background-color .2s;
 }
 
-.btn:hover, .btn:active{
+.btn.purple{
+  background-color: #8824CD;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, .2), inset 0 -1px 0 rgba(0, 0, 0, .2);
+  color:white;
+}
+
+.btn:hover{
   background-color: #9126d9;
   cursor:pointer;
 }
@@ -57,21 +67,15 @@ button:focus {
   width:100%;
 }
 
-#main h2{
+#main h1{
   font-size: 28px;
   font-weight: normal;
   text-align: center;
 }
 
-#main .btn{
-  background-color: #8824CD;
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, .2), inset 0 -1px 0 rgba(0, 0, 0, .2);
-  color:white;
-}
-
 #main span{
   display:block;
-  font-size:8px;
+  font-size:10px;
   margin-top:10px;
 }
 
@@ -90,7 +94,6 @@ button:focus {
 }
 
 #masterhead h3{
-  margin:0;
   text-align: center;
   text-transform: uppercase;
 }
@@ -118,31 +121,84 @@ button:focus {
   width: 100%;
 }
 
-#idkhowtonamethis {
+#pink {
   background-image: url('./img/backgroundpink.png');
   background-size:cover;
   background-position:bottom center;
   color:white;
+  padding:35% 0;
   text-align: center;
 }
 
-#idkhowtonamethis .container{
-  padding:35% 0;
+#pink .container{
 }
 
-#idkhowtonamethis h3{
+#pink h2{
   font-weight: lighter;
   font-size:30px;
-  margin:0;
 }
 
-#idkhowtonamethis p{
+#pink p{
   font-size:14px;
   margin-bottom:10%;
+  text-align: justify;
 }
 
-#idkhowtonamethis .btn{
+#pink .btn{
   background-color: #fff;
   box-shadow:none;
   color: #D54C63;
+  transition: box-shadow .2s;
+}
+
+#pink .btn:hover{
+  box-shadow: 0 0 5px #fff;
+}
+
+#about1{
+  padding:20% 0;
+  color:#3A4D60;
+}
+
+#about1 h3{
+  font-size:18px;
+  text-transform: uppercase;
+}
+
+#about1 p{
+  font-size:14px;
+  text-align: justify;
+  margin:10% 0;
+}
+
+#about1 .highlight {
+  font-size:16px;
+}
+
+#purple{
+  background-image:url('./img/backgroundpurple.png');
+  background-size:cover;
+  background-position: top center;
+  color:white;
+  padding:35% 0;
+  text-align: center;
+}
+
+#purple h2{
+  font-weight: lighter;
+  font-size:30px;
+  text-align: center;
+}
+
+#purple p{
+  color:#A87BB7;
+  font-size:14px;
+  text-align: justify;
+  margin:10% 0;
+}
+
+#purple span{
+  display:block;
+  font-size:10px;
+  margin-top:5%;
 }
