@@ -18,8 +18,7 @@ h2, h3, h4, h5, h6{
 
 .container {
   width:90%;
-  margin: auto;
-  height:100%;
+  margin: 0 auto;
 }
 
 .flex {
@@ -67,7 +66,7 @@ h2, h3, h4, h5, h6{
   background-position: center bottom;
   background-size:cover;
   color:white;
-  height:100vh;
+  height: 100vh;
   width:100%;
 }
 
@@ -87,7 +86,7 @@ h2, h3, h4, h5, h6{
   background-color: #2E3B4E;
   box-shadow:inset 0 1px 0 rgba(255, 255, 255, .2);
   color:white;
-  min-height:250px;
+  min-height:50vh;
   padding: 5% 0;
   position:relative;
   width:100%;
@@ -130,7 +129,8 @@ h2, h3, h4, h5, h6{
   background-size:cover;
   background-position:bottom center;
   color:white;
-  padding:35% 0;
+  min-height: 50vh;
+  padding:20vh 0;
   text-align: center;
 }
 
@@ -160,8 +160,9 @@ h2, h3, h4, h5, h6{
 }
 
 .about{
-  padding:20% 0;
   color:#3A4D60;
+  min-height: 50vh;
+  padding:10vh 0;
 }
 
 .about h3{
@@ -172,7 +173,7 @@ h2, h3, h4, h5, h6{
 .about p{
   font-size:14px;
   text-align: justify;
-  margin:10% 0;
+  margin:5vh 0;
 }
 
 .about .highlight {
@@ -182,9 +183,10 @@ h2, h3, h4, h5, h6{
 #purple{
   background-image:url('./img/backgroundpurple.png');
   background-size:cover;
-  background-position: top center;
+  background-position: center center;
   color:white;
-  padding:35% 0;
+  min-height: 50vh;
+  padding:25vh 0;
   text-align: center;
 }
 
@@ -198,13 +200,13 @@ h2, h3, h4, h5, h6{
   color:#A87BB7;
   font-size:14px;
   text-align: justify;
-  margin:10% 0;
+  margin:5vh 0;
 }
 
 #purple span{
   display:block;
   font-size:10px;
-  margin-top:5%;
+  margin-top:1vh;
 }
 
 #about2{
@@ -212,9 +214,8 @@ h2, h3, h4, h5, h6{
   background-size:cover;
   background-position:bottom left;
   color:white;
-  height:75vh;
   min-height: 75vh;
-  padding-bottom:10%;
+  padding:10% 0;
 }
 
 #about2 span:first-of-type{
@@ -226,6 +227,7 @@ h2, h3, h4, h5, h6{
 }
 
 #about2 h2{
+  display: block;
   font-weight:normal;
   font-size:22px;
   margin:5% 0;
@@ -250,9 +252,8 @@ h2, h3, h4, h5, h6{
 #pink2{
   background-color:#E7526B;
   color:white;
-  height:75vh;
-  min-height: 75vh;
-  padding:20% 0;
+  min-height: 50vh;
+  padding:10vh 0;
 }
 
 #pink2 h3{
@@ -268,4 +269,12 @@ h2, h3, h4, h5, h6{
 #pink2 span{
   font-size:14px;
   text-decoration: underline;
+}
+
+footer{
+  background-color: #2E3B4E;
+  color:white;
+  min-height:25vh;
+  padding:5vh 0 15vh 0;
+  font-size:12px;
 }
