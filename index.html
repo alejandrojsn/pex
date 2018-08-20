@@ -128,5 +128,19 @@
       burgerButton.classList.toggle("active");
       navbar.style.height = navbar.style.height === `${navbar.scrollHeight}px` ? `${navbarHeight}px` : `${navbar.scrollHeight}px`;
     });
+
+    let mq = window.matchMedia("(min-width: 920px)");
+
+    if(mq.matches){
+      window.addEventListener("scroll", function(){
+        if(window.pageYOffset > 102){
+          navbar.classList.add("scrolled");
+        }
+        else{
+          navbar.classList.remove("scrolled");
+        }
+      });
+    }
+
   </script>
 </html>

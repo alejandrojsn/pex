@@ -453,6 +453,74 @@ footer{
 }
 
 @media screen and (min-width: 920px){
+
+  #navbar{
+    height:102px;
+    background-color: transparent;
+    flex-wrap: nowrap;
+    align-items: center;
+    overflow:hidden;
+    box-shadow:none;
+    border-bottom: 1px solid rgba(255, 255, 255, .2);
+    justify-content: flex-end;
+    transition: all .5s;
+  }
+
+  #navbar #logo{
+    margin-left:15%;
+    margin-right:auto;
+  }
+
+  #navbar .burger-button{
+    display:none;
+  }
+
+  #navbar #collapse {
+    width:auto;
+    order:3;
+    margin-right:10%;
+  }
+
+  #navbar #collapse ul{
+    list-style: none;
+    width:auto;
+    margin:0;
+    padding:0;
+  }
+
+  #navbar #collapse ul li{
+    display: inline-block;
+    width:auto;
+    height:100%;
+    line-height:102px;
+    border-top:none;
+    box-shadow:none;
+    padding:0;
+    margin:0 25px;
+  }
+
+  #navbar #collapse ul li:last-of-type{
+    border-bottom:none;
+  }
+
+  #navbar #collapse ul li:hover{
+    cursor:pointer;
+    background-color:transparent;
+    box-shadow:inset 0 -3px 0 white;
+  }
+
+  #navbar.scrolled{
+    height:60px;
+    border-bottom:none;
+    background-color: #661b98;
+    box-shadow:inset 0 2px 0 rgba(255, 255, 255, .1), inset 0 -2px 0 rgba(0, 0, 0, .1);
+  }
+
+  #navbar.scrolled #collapse ul li:hover{
+    background-color:rgba(255, 255, 255, .1);
+    margin:0;
+    padding:0 25px;
+  }
   
   #main .container{
     width:80%;
