@@ -5,9 +5,31 @@
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <title>Pex</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
+
+    <nav id="navbar">
+      <div id="burger-button" class="burger-button">
+        <i class="fas fa-bars"></i>
+      </div>
+
+      <figure id="logo">
+        <img src="./img/logo.png" alt="">
+      </figure>
+
+      <div id="collapse">
+        <ul>
+          <li><a href="#">About</a></li>
+          <li><a href="#">How It Works</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
     <main id="main" class="flex column justify-center">
       <div class="container">
         <div id="text" class="flex column align-center">
@@ -96,4 +118,15 @@
       </div>
     </footer>
   </body>
+
+  <script>
+    let burgerButton = document.getElementById("burger-button");
+    let navbar = document.getElementById("navbar");
+    let navbarHeight = navbar.clientHeight;
+
+    burgerButton.addEventListener("click", function(){
+      burgerButton.classList.toggle("active");
+      navbar.style.height = navbar.style.height === `${navbar.scrollHeight}px` ? `${navbarHeight}px` : `${navbar.scrollHeight}px`;
+    });
+  </script>
 </html>
